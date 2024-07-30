@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E31722D82C4FCF460070066E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31722D72C4FCF460070066E /* AppDelegate.swift */; };
+		E31722DA2C4FCF460070066E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31722D92C4FCF460070066E /* SceneDelegate.swift */; };
+		E31722E12C4FCF4A0070066E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E31722E02C4FCF4A0070066E /* Assets.xcassets */; };
+		E31722E42C4FCF4A0070066E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E31722E32C4FCF4A0070066E /* Base */; };
+		E31722EC2C4FD1FA0070066E /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31722EB2C4FD1FA0070066E /* BaseResponse.swift */; };
+		E31722EE2C4FFD430070066E /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31722ED2C4FFD430070066E /* ServiceManager.swift */; };
+		E31722F22C5000590070066E /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31722F12C5000590070066E /* MainVC.xib */; };
+		E31722F32C5000590070066E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31722F02C5000590070066E /* MainVC.swift */; };
+		E317232C2C510DD80070066E /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E317232A2C510DD80070066E /* CarCell.swift */; };
+		E317232D2C510DD80070066E /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E317232B2C510DD80070066E /* CarCell.xib */; };
+		E31723342C512F860070066E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E31723332C512F860070066E /* Kingfisher */; };
+		E31723362C5146F70070066E /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31723352C5146F70070066E /* MainVM.swift */; };
+		E317233E2C5232E80070066E /* CarDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E317233C2C5232E80070066E /* CarDetailVC.swift */; };
+		E317233F2C5232E80070066E /* CarDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E317233D2C5232E80070066E /* CarDetailVC.xib */; };
+		E31723412C52361D0070066E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31723402C52361D0070066E /* String+Extension.swift */; };
+		E31723432C523BA80070066E /* CarDetailVM .swift in Sources */ = {isa = PBXBuildFile; fileRef = E31723422C523BA80070066E /* CarDetailVM .swift */; };
+		E31723732C5391290070066E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31723722C5391290070066E /* Router.swift */; };
+		E31723752C5789AF0070066E /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31723742C5789AF0070066E /* MainRouter.swift */; };
+		E31723772C57A66B0070066E /* CarDetailRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31723762C57A66B0070066E /* CarDetailRoute.swift */; };
+		E31723792C57A6B30070066E /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31723782C57A6B30070066E /* BaseVM.swift */; };
+		E317237B2C57AA0C0070066E /* CarDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E317237A2C57AA0C0070066E /* CarDetailRouter.swift */; };
+		E317237E2C58D9310070066E /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E317237D2C58D9310070066E /* BaseVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E31722D42C4FCF460070066E /* arabamCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arabamCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31722D72C4FCF460070066E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E31722D92C4FCF460070066E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E31722E02C4FCF4A0070066E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E31722E32C4FCF4A0070066E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E31722E52C4FCF4A0070066E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E31722EB2C4FD1FA0070066E /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		E31722ED2C4FFD430070066E /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		E31722F02C5000590070066E /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		E31722F12C5000590070066E /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		E317232A2C510DD80070066E /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		E317232B2C510DD80070066E /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
+		E31723352C5146F70070066E /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		E317233C2C5232E80070066E /* CarDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailVC.swift; sourceTree = "<group>"; };
+		E317233D2C5232E80070066E /* CarDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarDetailVC.xib; sourceTree = "<group>"; };
+		E31723402C52361D0070066E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E31723422C523BA80070066E /* CarDetailVM .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarDetailVM .swift"; sourceTree = "<group>"; };
+		E31723722C5391290070066E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E31723742C5789AF0070066E /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		E31723762C57A66B0070066E /* CarDetailRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailRoute.swift; sourceTree = "<group>"; };
+		E31723782C57A6B30070066E /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		E317237A2C57AA0C0070066E /* CarDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailRouter.swift; sourceTree = "<group>"; };
+		E317237D2C58D9310070066E /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E31722D12C4FCF460070066E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31723342C512F860070066E /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E31722CB2C4FCF460070066E = {
+			isa = PBXGroup;
+			children = (
+				E31722D62C4FCF460070066E /* arabamCase */,
+				E31722D52C4FCF460070066E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E31722D52C4FCF460070066E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E31722D42C4FCF460070066E /* arabamCase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E31722D62C4FCF460070066E /* arabamCase */ = {
+			isa = PBXGroup;
+			children = (
+				E31723702C52600F0070066E /* Network */,
+				E317236F2C525FA90070066E /* Scenes */,
+				E31723712C5260370070066E /* Extensions */,
+				E317236E2C525F190070066E /* Application */,
+				E31722E02C4FCF4A0070066E /* Assets.xcassets */,
+				E31722E22C4FCF4A0070066E /* LaunchScreen.storyboard */,
+				E31722E52C4FCF4A0070066E /* Info.plist */,
+			);
+			path = arabamCase;
+			sourceTree = "<group>";
+		};
+		E317232E2C510DE60070066E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E31722EB2C4FD1FA0070066E /* BaseResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E31723302C5120030070066E /* CarCell */ = {
+			isa = PBXGroup;
+			children = (
+				E317232A2C510DD80070066E /* CarCell.swift */,
+				E317232B2C510DD80070066E /* CarCell.xib */,
+			);
+			path = CarCell;
+			sourceTree = "<group>";
+		};
+		E31723312C51201D0070066E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E31723742C5789AF0070066E /* MainRouter.swift */,
+				E31722F12C5000590070066E /* MainVC.xib */,
+				E31722F02C5000590070066E /* MainVC.swift */,
+				E31723352C5146F70070066E /* MainVM.swift */,
+				E31723392C514D110070066E /* Cell */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E31723372C514A810070066E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E31722ED2C4FFD430070066E /* ServiceManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E31723392C514D110070066E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E31723302C5120030070066E /* CarCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E317233B2C5230DC0070066E /* CarDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				E317233C2C5232E80070066E /* CarDetailVC.swift */,
+				E317233D2C5232E80070066E /* CarDetailVC.xib */,
+				E31723422C523BA80070066E /* CarDetailVM .swift */,
+				E31723762C57A66B0070066E /* CarDetailRoute.swift */,
+				E317237A2C57AA0C0070066E /* CarDetailRouter.swift */,
+			);
+			path = CarDetailPage;
+			sourceTree = "<group>";
+		};
+		E317236E2C525F190070066E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E31722D72C4FCF460070066E /* AppDelegate.swift */,
+				E31722D92C4FCF460070066E /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E317236F2C525FA90070066E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E317237C2C57E19D0070066E /* Base */,
+				E31723312C51201D0070066E /* Main */,
+				E317233B2C5230DC0070066E /* CarDetailPage */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E31723702C52600F0070066E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E317232E2C510DE60070066E /* Model */,
+				E31723372C514A810070066E /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E31723712C5260370070066E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E31723402C52361D0070066E /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E317237C2C57E19D0070066E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E31723722C5391290070066E /* Router.swift */,
+				E31723782C57A6B30070066E /* BaseVM.swift */,
+				E317237D2C58D9310070066E /* BaseVC.swift */,
+			);
+			name = Base;
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E31722D32C4FCF460070066E /* arabamCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E31722E82C4FCF4A0070066E /* Build configuration list for PBXNativeTarget "arabamCase" */;
+			buildPhases = (
+				E31722D02C4FCF460070066E /* Sources */,
+				E31722D12C4FCF460070066E /* Frameworks */,
+				E31722D22C4FCF460070066E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = arabamCase;
+			packageProductDependencies = (
+				E31723332C512F860070066E /* Kingfisher */,
+			);
+			productName = arabamCase;
+			productReference = E31722D42C4FCF460070066E /* arabamCase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E31722CC2C4FCF460070066E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E31722D32C4FCF460070066E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = E31722CF2C4FCF460070066E /* Build configuration list for PBXProject "arabamCase" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E31722CB2C4FCF460070066E;
+			packageReferences = (
+				E31723322C512F860070066E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = E31722D52C4FCF460070066E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E31722D32C4FCF460070066E /* arabamCase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E31722D22C4FCF460070066E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31722F22C5000590070066E /* MainVC.xib in Resources */,
+				E31722E12C4FCF4A0070066E /* Assets.xcassets in Resources */,
+				E317232D2C510DD80070066E /* CarCell.xib in Resources */,
+				E317233F2C5232E80070066E /* CarDetailVC.xib in Resources */,
+				E31722E42C4FCF4A0070066E /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E31722D02C4FCF460070066E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31723752C5789AF0070066E /* MainRouter.swift in Sources */,
+				E31723732C5391290070066E /* Router.swift in Sources */,
+				E31723412C52361D0070066E /* String+Extension.swift in Sources */,
+				E31723362C5146F70070066E /* MainVM.swift in Sources */,
+				E31722F32C5000590070066E /* MainVC.swift in Sources */,
+				E317237B2C57AA0C0070066E /* CarDetailRouter.swift in Sources */,
+				E317233E2C5232E80070066E /* CarDetailVC.swift in Sources */,
+				E317232C2C510DD80070066E /* CarCell.swift in Sources */,
+				E31723432C523BA80070066E /* CarDetailVM .swift in Sources */,
+				E31722D82C4FCF460070066E /* AppDelegate.swift in Sources */,
+				E31723772C57A66B0070066E /* CarDetailRoute.swift in Sources */,
+				E317237E2C58D9310070066E /* BaseVC.swift in Sources */,
+				E31722DA2C4FCF460070066E /* SceneDelegate.swift in Sources */,
+				E31722EC2C4FD1FA0070066E /* BaseResponse.swift in Sources */,
+				E31722EE2C4FFD430070066E /* ServiceManager.swift in Sources */,
+				E31723792C57A6B30070066E /* BaseVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E31722E22C4FCF4A0070066E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E31722E32C4FCF4A0070066E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E31722E62C4FCF4A0070066E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E31722E72C4FCF4A0070066E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E31722E92C4FCF4A0070066E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FB7Y8XZHL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = arabamCase/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elifbeyza.arabamCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E31722EA2C4FCF4A0070066E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FB7Y8XZHL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = arabamCase/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elifbeyza.arabamCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E31722CF2C4FCF460070066E /* Build configuration list for PBXProject "arabamCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E31722E62C4FCF4A0070066E /* Debug */,
+				E31722E72C4FCF4A0070066E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E31722E82C4FCF4A0070066E /* Build configuration list for PBXNativeTarget "arabamCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E31722E92C4FCF4A0070066E /* Debug */,
+				E31722EA2C4FCF4A0070066E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E31723322C512F860070066E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E31723332C512F860070066E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E31723322C512F860070066E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E31722CC2C4FCF460070066E /* Project object */;
+}
