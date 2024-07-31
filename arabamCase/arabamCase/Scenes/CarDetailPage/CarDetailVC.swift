@@ -23,7 +23,7 @@ class CarDetailVC: BaseVC<CarDetailVM> {
         bindViewModel()
     }
 
-    internal override func bindViewModel() {
+        func bindViewModel() {
         guard let car = viewModel.car else { return }
         titleLabel.text = car.title
         categoryLabel.text = car.category.name

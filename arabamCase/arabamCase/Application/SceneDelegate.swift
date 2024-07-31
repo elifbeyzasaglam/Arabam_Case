@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
          let mainRouter = MainRouter()
          let viewModel  = MainVM(router: mainRouter)
          let mainVC = MainVC(viewModel: viewModel)
-        
+         
          //mainVC.configure(with: mainRouter)
         
          let navigationController = UINavigationController(rootViewController: mainVC)

@@ -13,7 +13,6 @@ protocol CarDetailRoute {
 
 extension CarDetailRoute where Self: RouterProtocol {
     
-    
     func navigateToDetail(from: UIViewController ,with car: Car) {
         let router = CarDetailRouter()
         let detailVM = CarDetailVM(router: router)

@@ -30,7 +30,7 @@ protocol RouterProtocol {
     
     func route(from baseViewController: UIViewController ,to viewController: UIViewController, animated: Bool) {
         baseViewController.navigationController?.pushViewController(viewController, animated: animated)
-//        navigationController?.pushViewController(viewController, animated: animated)
+        navigationController?.pushViewController(viewController, animated: animated)
     }
     
     func pop() {

@@ -8,6 +8,7 @@ class MainVC: BaseVC<MainVM> {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        configureClosures()
         viewModel.fetchData()
     }
 
@@ -17,7 +18,14 @@ class MainVC: BaseVC<MainVM> {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "CarCell", bundle: nil), forCellReuseIdentifier: "CarCell")
     }
+    
+    private func configureClosures() {
+        viewModel.onCarsFetched = {  [weak self] in
+            self?.tableView.reloadData()
+        }
+    }
 }
+
 
 // MARK: - Table View DataSource
 extension MainVC: UITableViewDelegate, UITableViewDataSource {
