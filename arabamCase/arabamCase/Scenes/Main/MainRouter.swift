@@ -9,8 +9,5 @@ import UIKit
 
 class MainRouter: Router, CarDetailRoute {
    typealias Route = CarDetailRoute
-    
-
-    
 }
 

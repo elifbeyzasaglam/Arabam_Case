@@ -7,22 +7,23 @@
 
 import UIKit
 
-class CarDetailVC: BaseVC<CarDetailVM> {
+final class CarDetailVC: BaseVC<CarDetailVM> {
+    // MARK: - Outlets
+    @IBOutlet private weak var detailImageView: UIImageView!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var categoryLabel: UILabel!
+    @IBOutlet private weak var locationLabel: UILabel!
+    @IBOutlet private weak var modelNameLabel: UILabel!
+    @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var PriceLabell: UILabel!
+    @IBOutlet private weak var dateLabel: UILabel!
     
-    @IBOutlet weak var detailImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var modelNameLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var PriceLabell: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
     }
-
+// MARK: BindViewModel
         func bindViewModel() {
         guard let car = viewModel.car else { return }
         titleLabel.text = car.title

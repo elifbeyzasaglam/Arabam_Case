@@ -9,11 +9,28 @@ import Foundation
 
 final class ServiceManager {
     static let shared = ServiceManager()
-    
-    func fetchCar(completion: @escaping (Result<[Car], Error>) -> Void) {
-        let baseUrl = "https://sandbox.arabamd.com/api/v1/listing?sort=1&sortDirection=0&take=10"
-        
-        guard let url = URL(string: baseUrl) else { return }
+    private let baseURL = "https://sandbox.arabamd.com/api/v1"
+       
+       private func createURL(path: String, parameters: [String: String]) -> URL? {
+           var urlString = baseURL + path
+           
+           if !parameters.isEmpty {
+               urlString += "?"
+               parameters.forEach { key, value in
+                   urlString += "\(key)=\(value)&"
+               }
+               urlString.removeLast()
+           }
+           return URL(string: urlString)
+       }
+// MARK: fetchCar
+    func fetchCar(sort: Int, sortDirection: Int, take: Int, completion: @escaping (Result<[Car], Error>) -> Void) {
+        let parameters = [
+            "sort": "\(sort)",
+            "sortDirection": "\(sortDirection)",
+            "take": "\(take)"
+        ]
+        guard let url = createURL(path: "/listing", parameters: parameters) else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {

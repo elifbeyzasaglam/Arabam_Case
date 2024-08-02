@@ -8,12 +8,11 @@
 import Foundation
 
 protocol  BaseVMProtocol {
-    
 }
 
 class BaseVM <R: Router>: BaseVMProtocol {
     var router: R
     init(router: R) {
-        self.router = router
+    self.router = router
     }
 }

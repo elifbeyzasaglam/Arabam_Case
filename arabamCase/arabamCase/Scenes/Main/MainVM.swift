@@ -11,9 +11,12 @@ final class MainVM: BaseVM<MainRouter> {
     var cars: [Car] = []
     var onCarsFetched: (() -> Void)?
     
+    private let sort = 1
+    private let sortDirection = 0
+    private let take = 10
     
     func fetchData() {
-        ServiceManager.shared.fetchCar { [weak self] response in
+        ServiceManager.shared.fetchCar (sort: sort, sortDirection: sortDirection, take: take) { [weak self] response in
             DispatchQueue.main.async {
                 switch response {
                 case .success(let cars):

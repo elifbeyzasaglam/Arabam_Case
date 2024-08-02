@@ -1,6 +1,6 @@
 import UIKit
 
-class MainVC: BaseVC<MainVM> {
+final class MainVC: BaseVC<MainVM> {
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
 
@@ -11,7 +11,6 @@ class MainVC: BaseVC<MainVM> {
         configureClosures()
         viewModel.fetchData()
     }
-
     // MARK: - Configures
     private func configureTableView() {
         tableView.delegate = self
@@ -26,8 +25,7 @@ class MainVC: BaseVC<MainVM> {
     }
 }
 
-
-// MARK: - Table View DataSource
+// MARK: - ViewController: UICollectionViewDelegate, UICollectionViewDataSource
 extension MainVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let car = viewModel.cars[indexPath.row]
@@ -42,7 +40,6 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CarCell", for: indexPath) as? CarCell else {
             return UITableViewCell()
         }
-        
          let car = viewModel.cars[indexPath.row]
          cell.configure(with: car)
          return cell

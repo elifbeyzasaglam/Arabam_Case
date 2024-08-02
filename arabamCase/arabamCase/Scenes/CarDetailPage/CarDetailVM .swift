@@ -9,6 +9,5 @@ import Foundation
 
 final class CarDetailVM: BaseVM<CarDetailRouter>{
     var car: Car?
-    
 }
 

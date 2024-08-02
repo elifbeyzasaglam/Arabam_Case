@@ -9,17 +9,14 @@ import UIKit
 import Kingfisher
 
 final class CarCell: UITableViewCell {
+   
     // MARK: - Outlets
-
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var priceLabel: UILabel!
     @IBOutlet private weak var dataLabel: UILabel!
     @IBOutlet private weak var carImageView: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
+    // MARK: configure
     func configure(with car: Car) {
         titleLabel.text = car.title
         priceLabel.text = car.priceFormatted
