@@ -1,7 +1,7 @@
 # Arabam Case
 
 ## Projece Açıklaması
-Bu proje, MVVM-R (Model-View-ViewModel-Router) mimarisini öğrenme ve uygulama sürecinde geliştirilmiş bir küçük örnektir. Uygulama, kullanıcının listedeki arabaların detayına gidebileceği basit bir yapıya sahiptir. Router, sayfalar arası geçişleri yönetir ve MVVM, verilerin kullanıcı arayüzünde sunulmasını sağlar.
+Bu proje, MVVM-R (Model-View-ViewModel-Router) mimarisini öğrenme ve uygulama sürecinde geliştirilmiş bir küçük örnektir. Uygulama, kullanıcının listedeki arabaların detayına gidebileceği basit bir yapıya sahiptir. Router, sayfalar arası geçişleri yönetir ve MVVM, verilerin kullanıcı arayüzünde sunulmasını sağlar.arabam.com şirketindeki stajım kapsamında yapılmıştır.
 
 ## Özellikler
 •	MVVM-R mimarisi ile geliştirilmiştir. 
@@ -11,7 +11,7 @@ Bu proje, MVVM-R (Model-View-ViewModel-Router) mimarisini öğrenme ve uygulama 
 
 ## Project Description
 
-This project is a small example developed during the learning and application process of the MVVM-R (Model-View-ViewModel-Router) architecture. The app features a simple structure where the user can navigate to the details of cars listed. The Router manages the transitions between pages, while MVVM ensures the data is presented in the user interface.
+This project is a small example developed during the learning and application process of the MVVM-R (Model-View-ViewModel-Router) architecture. The app features a simple structure where the user can navigate to the details of cars listed. The Router manages the transitions between pages, while MVVM ensures the data is presented in the user interface.It was developed as part of my internship at arabam.com.
 
 ## Features
 •	Developed using the MVVM-R architecture.
